@@ -1,0 +1,2705 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Siri Logistic | Premium Luxury Bus Services | Hyderabad</title>
+    <!-- Bootstrap CSS -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+    />
+    <!-- Font Awesome -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+    />
+    <!-- Google Fonts -->
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700&family=Playfair+Display:wght@400;500;600;700&family=Cinzel:wght@400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <!-- AOS Animation -->
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
+    <!-- Swiper CSS -->
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"
+    />
+    <style>
+      :root {
+        --royal-blue: #0a1a3a;
+        --deep-blue: #1a2d5a;
+        --gold: #d4af37;
+        --light-gold: #f4e4a6;
+        --cream: #f8f5e6;
+        --white: #ffffff;
+        --dark-blue: #08142e;
+      }
+
+      * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+      }
+
+      html,
+      body {
+        width: 100%;
+        overflow-x: hidden;
+        font-family: "Montserrat", sans-serif;
+        color: #333;
+        scroll-behavior: smooth;
+        background-color: var(--cream);
+      }
+
+      h1,
+      h2,
+      h3,
+      h4,
+      h5 {
+        font-family: "Cinzel", serif;
+        font-weight: 600;
+      }
+
+      /* Custom Scrollbar */
+      ::-webkit-scrollbar {
+        width: 10px;
+      }
+
+      ::-webkit-scrollbar-track {
+        background: var(--cream);
+      }
+
+      ::-webkit-scrollbar-thumb {
+        background: var(--gold);
+        border-radius: 5px;
+      }
+
+      /* Navigation */
+      .navbar {
+        background: rgba(10, 26, 58, 0.95);
+        backdrop-filter: blur(10px);
+        padding: 15px 0;
+        transition: all 0.4s ease;
+        width: 100%;
+        z-index: 1000;
+        border-bottom: 1px solid rgba(212, 175, 55, 0.2);
+      }
+
+      .navbar.scrolled {
+        padding: 10px 0;
+        box-shadow: 0 5px 20px rgba(0, 0, 0, 0.1);
+        background: rgba(10, 26, 58, 0.98);
+      }
+
+      .navbar-brand {
+        display: flex;
+        align-items: center;
+        font-family: "Cinzel", serif;
+        font-weight: 700;
+        font-size: 1.8rem;
+        color: var(--white) !important;
+      }
+
+      .logo-container {
+        display: flex;
+        align-items: center;
+        gap: 12px;
+      }
+
+      .logo-icon {
+        width: 50px;
+        height: 50px;
+
+        border-radius: 50%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        color: var(--royal-blue);
+        font-size: 1.5rem;
+        font-weight: bold;
+      }
+
+      .navbar-brand span {
+        color: var(--gold);
+        text-shadow: 0 0 10px rgba(212, 175, 55, 0.5);
+      }
+
+      .nav-link {
+        color: var(--white) !important;
+        font-weight: 500;
+        margin: 0 12px;
+        transition: all 0.3s ease;
+        position: relative;
+        font-size: 1rem;
+      }
+
+      .nav-link:after {
+        content: "";
+        position: absolute;
+        width: 0;
+        height: 2px;
+        bottom: 0;
+        left: 0;
+        background: linear-gradient(90deg, var(--gold), transparent);
+        transition: width 0.4s ease;
+      }
+
+      .nav-link:hover:after {
+        width: 100%;
+      }
+
+      .nav-link:hover {
+        color: var(--gold) !important;
+        transform: translateY(-2px);
+      }
+
+      /* Hero Section */
+      .hero-section {
+        position: relative;
+        height: 100vh;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        color: var(--white);
+        text-align: center;
+        overflow: hidden;
+        background: linear-gradient(
+          135deg,
+          var(--royal-blue) 0%,
+          var(--dark-blue) 50%,
+          var(--deep-blue) 100%
+        );
+        margin-top: 80px;
+      }
+
+      .royal-pattern {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background-image: radial-gradient(
+            circle at 20% 30%,
+            rgba(212, 175, 55, 0.1) 0%,
+            transparent 50%
+          ),
+          radial-gradient(
+            circle at 80% 70%,
+            rgba(212, 175, 55, 0.1) 0%,
+            transparent 50%
+          ),
+          url("data:image/svg+xml,%3Csvg width='100' height='100' viewBox='0 0 100 100' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M11 18c3.866 0 7-3.134 7-7s-3.134-7-7-7-7 3.134-7 7 3.134 7 7 7zm48 25c3.866 0 7-3.134 7-7s-3.134-7-7-7-7 3.134-7 7 3.134 7 7 7zm-43-7c1.657 0 3-1.343 3-3s-1.343-3-3-3-3 1.343-3 3 1.343 3 3 3zm63 31c1.657 0 3-1.343 3-3s-1.343-3-3-3-3 1.343-3 3 1.343 3 3 3zM34 90c1.657 0 3-1.343 3-3s-1.343-3-3-3-3 1.343-3 3 1.343 3 3 3zm56-76c1.657 0 3-1.343 3-3s-1.343-3-3-3-3 1.343-3 3 1.343 3 3 3zM12 86c2.21 0 4-1.79 4-4s-1.79-4-4-4-4 1.79-4 4 1.79 4 4 4zm28-65c2.21 0 4-1.79 4-4s-1.79-4-4-4-4 1.79-4 4 1.79 4 4 4zm23-11c2.76 0 5-2.24 5-5s-2.24-5-5-5-5 2.24-5 5 2.24 5 5 5zm-6 60c2.21 0 4-1.79 4-4s-1.79-4-4-4-4 1.79-4 4 1.79 4 4 4zm29 22c2.76 0 5-2.24 5-5s-2.24-5-5-5-5 2.24-5 5 2.24 5 5 5zM32 63c2.76 0 5-2.24 5-5s-2.24-5-5-5-5 2.24-5 5 2.24 5 5 5zm57-13c2.76 0 5-2.24 5-5s-2.24-5-5-5-5 2.24-5 5 2.24 5 5 5zm-9-21c1.105 0 2-.895 2-2s-.895-2-2-2-2 .895-2 2 .895 2 2 2zM60 91c1.105 0 2-.895 2-2s-.895-2-2-2-2 .895-2 2 .895 2 2 2zM35 41c1.105 0 2-.895 2-2s-.895-2-2-2-2 .895-2 2 .895 2 2 2zM12 60c1.105 0 2-.895 2-2s-.895-2-2-2-2 .895-2 2 .895 2 2 2z' fill='%23d4af37' fill-opacity='0.1' fill-rule='evenodd'/%3E%3C/svg%3E");
+        z-index: 1;
+        animation: patternShift 20s ease infinite;
+      }
+
+      @keyframes patternShift {
+        0% {
+          background-position: 0% 0%;
+        }
+        50% {
+          background-position: 100% 100%;
+        }
+        100% {
+          background-position: 0% 0%;
+        }
+      }
+
+      .hero-content {
+        max-width: 900px;
+        padding: 0 20px;
+        z-index: 3;
+        position: relative;
+      }
+
+      .hero-section h1 {
+        font-size: 5.5rem;
+        margin-bottom: 25px;
+        text-shadow: 0 5px 15px rgba(0, 0, 0, 0.5);
+        animation: fadeInUp 1.2s ease-out;
+        background: linear-gradient(
+          135deg,
+          var(--gold),
+          var(--light-gold),
+          var(--gold)
+        );
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+        letter-spacing: 4px;
+        line-height: 1.1;
+        font-weight: 800;
+        position: relative;
+        filter: drop-shadow(0 0 10px rgba(212, 175, 55, 0.5));
+      }
+
+      .hero-section h1:after {
+        content: "";
+        position: absolute;
+        bottom: -15px;
+        left: 50%;
+        transform: translateX(-50%);
+        width: 200px;
+        height: 3px;
+        background: linear-gradient(
+          90deg,
+          transparent,
+          var(--gold),
+          transparent
+        );
+      }
+
+      .hero-tagline {
+        font-size: 1.8rem;
+        margin-bottom: 20px;
+        animation: fadeInUp 1.2s ease-out 0.3s both;
+        font-weight: 500;
+        font-family: "Playfair Display", serif;
+        font-style: italic;
+        color: var(--light-gold);
+      }
+
+      .hero-subtitle {
+        font-size: 1.3rem;
+        margin-bottom: 40px;
+        animation: fadeInUp 1.2s ease-out 0.6s both;
+        font-weight: 400;
+        color: var(--cream);
+        max-width: 600px;
+        margin-left: auto;
+        margin-right: auto;
+        line-height: 1.6;
+      }
+
+      .btn-royal {
+        background: linear-gradient(135deg, var(--gold), #b8941f);
+        border: none;
+        padding: 18px 45px;
+        font-weight: 600;
+        border-radius: 2px;
+        transition: all 0.4s ease;
+        color: var(--royal-blue);
+        font-size: 1.2rem;
+        box-shadow: 0 5px 20px rgba(212, 175, 55, 0.4);
+        position: relative;
+        overflow: hidden;
+        animation: fadeInUp 1.2s ease-out 0.9s both;
+        text-transform: uppercase;
+        letter-spacing: 2px;
+        font-family: "Cinzel", serif;
+        border: 1px solid rgba(212, 175, 55, 0.3);
+      }
+
+      .btn-royal:hover {
+        transform: translateY(-5px);
+        box-shadow: 0 10px 30px rgba(212, 175, 55, 0.6);
+        color: var(--royal-blue);
+      }
+
+      .btn-royal:before {
+        content: "";
+        position: absolute;
+        top: 0;
+        left: -100%;
+        width: 100%;
+        height: 100%;
+        background: linear-gradient(
+          90deg,
+          transparent,
+          rgba(255, 255, 255, 0.3),
+          transparent
+        );
+        transition: 0.6s;
+      }
+
+      .btn-royal:hover:before {
+        left: 100%;
+      }
+
+      .btn-royal-outline {
+        background: transparent;
+        border: 2px solid var(--gold);
+        padding: 16px 40px;
+        font-weight: 600;
+        border-radius: 2px;
+        transition: all 0.4s ease;
+        color: var(--gold);
+        font-size: 1.1rem;
+        position: relative;
+        overflow: hidden;
+        animation: fadeInUp 1.2s ease-out 1.1s both;
+        text-transform: uppercase;
+        letter-spacing: 2px;
+        font-family: "Cinzel", serif;
+      }
+
+      .btn-royal-outline:hover {
+        background: var(--gold);
+        color: var(--royal-blue);
+        transform: translateY(-5px);
+      }
+
+      /* Gold Particles */
+      .gold-particles {
+        position: absolute;
+        width: 100%;
+        height: 100%;
+        top: 0;
+        left: 0;
+        z-index: 1;
+      }
+
+      .gold-particle {
+        position: absolute;
+        background-color: var(--gold);
+        border-radius: 50%;
+        animation: goldFall 15s infinite linear;
+        opacity: 0.7;
+      }
+
+      @keyframes goldFall {
+        0% {
+          transform: translateY(-100px) rotate(0deg);
+          opacity: 0;
+        }
+        10% {
+          opacity: 1;
+        }
+        90% {
+          opacity: 1;
+        }
+        100% {
+          transform: translateY(100vh) rotate(360deg);
+          opacity: 0;
+        }
+      }
+
+      /* Section Title */
+      .section-title {
+        position: relative;
+        margin-bottom: 60px;
+        text-align: center;
+        color: var(--royal-blue);
+        font-size: 2.5rem;
+      }
+
+      .section-title:after {
+        content: "";
+        position: absolute;
+        bottom: -15px;
+        left: 50%;
+        transform: translateX(-50%);
+        width: 100px;
+        height: 4px;
+        background: linear-gradient(90deg, var(--gold), transparent);
+        border-radius: 2px;
+      }
+
+      .section-subtitle {
+        text-align: center;
+        color: var(--deep-blue);
+        margin-bottom: 50px;
+        font-size: 1.2rem;
+        max-width: 700px;
+        margin-left: auto;
+        margin-right: auto;
+      }
+
+      /* About Section */
+      .about-section {
+        padding: 120px 0;
+        background: linear-gradient(135deg, var(--cream) 0%, var(--white) 100%);
+        position: relative;
+        overflow: hidden;
+      }
+
+      .about-img-container {
+        position: relative;
+        border-radius: 15px;
+        overflow: hidden;
+        box-shadow: 0 20px 40px rgba(10, 26, 58, 0.2);
+        transition: transform 0.5s ease;
+      }
+
+      .about-img-container:hover {
+        transform: perspective(1000px) rotateY(0deg);
+      }
+
+      .about-img-container img {
+        width: 100%;
+        height: auto;
+        transition: transform 0.5s ease;
+      }
+
+      .about-img-container:hover img {
+        transform: scale(1.05);
+      }
+
+      .about-content {
+        position: relative;
+        z-index: 1;
+      }
+
+      .about-content h3 {
+        color: var(--royal-blue);
+        margin-bottom: 25px;
+        font-size: 2.2rem;
+      }
+
+      .about-content p {
+        margin-bottom: 20px;
+        line-height: 1.8;
+        color: var(--deep-blue);
+      }
+
+      .feature-list {
+        list-style: none;
+        padding: 0;
+      }
+
+      .feature-list li {
+        padding: 10px 0;
+        padding-left: 30px;
+        position: relative;
+        color: var(--deep-blue);
+        font-weight: 500;
+      }
+
+      .feature-list li:before {
+        content: "✓";
+        position: absolute;
+        left: 0;
+        color: var(--gold);
+        font-weight: bold;
+      }
+
+      /* Services Section */
+      .services-section {
+        padding: 120px 0;
+        background: var(--royal-blue);
+        position: relative;
+        overflow: hidden;
+      }
+
+      .services-section .section-title {
+        color: var(--white);
+      }
+
+      .services-section .section-subtitle {
+        color: var(--light-gold);
+      }
+
+      .service-card {
+        border: none;
+        border-radius: 15px;
+        overflow: hidden;
+        box-shadow: 0 15px 30px rgba(0, 0, 0, 0.2);
+        transition: all 0.4s ease;
+        margin-bottom: 30px;
+        height: 100%;
+        position: relative;
+        background: var(--white);
+        z-index: 1;
+      }
+
+      .service-card:hover {
+        transform: translateY(-15px);
+        box-shadow: 0 25px 50px rgba(0, 0, 0, 0.3);
+      }
+
+      .service-card img {
+        height: 220px;
+        object-fit: cover;
+        transition: transform 0.5s ease;
+        width: 100%;
+      }
+
+      .service-card:hover img {
+        transform: scale(1.1);
+      }
+
+      .service-card .card-body {
+        padding: 25px;
+      }
+
+      .service-card h5 {
+        color: var(--royal-blue);
+        margin-bottom: 15px;
+        font-size: 1.4rem;
+      }
+
+      .service-badge {
+        position: absolute;
+        top: 15px;
+        right: 15px;
+        background: linear-gradient(135deg, var(--gold), #b8941f);
+        color: var(--royal-blue);
+        padding: 8px 20px;
+        border-radius: 20px;
+        font-size: 0.8rem;
+        font-weight: 700;
+        box-shadow: 0 4px 10px rgba(212, 175, 55, 0.4);
+        z-index: 2;
+      }
+
+      /* Features Section */
+      .features-section {
+        padding: 120px 0;
+        background: linear-gradient(135deg, var(--cream) 0%, var(--white) 100%);
+      }
+
+      .feature-item {
+        text-align: center;
+        padding: 40px 25px;
+        border-radius: 15px;
+        transition: all 0.4s ease;
+        height: 100%;
+        background: var(--white);
+        box-shadow: 0 10px 30px rgba(10, 26, 58, 0.1);
+        border: 1px solid rgba(212, 175, 55, 0.2);
+        position: relative;
+        overflow: hidden;
+      }
+
+      .feature-item:before {
+        content: "";
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 5px;
+        background: linear-gradient(90deg, var(--gold), #b8941f);
+      }
+
+      .feature-item:hover {
+        transform: translateY(-10px);
+        box-shadow: 0 20px 40px rgba(10, 26, 58, 0.15);
+      }
+
+      .feature-icon {
+        width: 90px;
+        height: 90px;
+        background: linear-gradient(135deg, var(--light-gold), var(--gold));
+        border-radius: 50%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        margin: 0 auto 25px;
+        color: var(--royal-blue);
+        font-size: 2.2rem;
+        transition: all 0.4s ease;
+        box-shadow: 0 8px 20px rgba(212, 175, 55, 0.3);
+      }
+
+      .feature-item:hover .feature-icon {
+        transform: scale(1.1) rotate(5deg);
+        box-shadow: 0 12px 25px rgba(212, 175, 55, 0.4);
+      }
+
+      .feature-item h5 {
+        color: var(--royal-blue);
+        margin-bottom: 15px;
+        font-size: 1.3rem;
+      }
+
+      .feature-item p {
+        color: var(--deep-blue);
+        line-height: 1.7;
+      }
+
+      /* Booking Steps */
+      .booking-steps {
+        padding: 120px 0;
+        background: var(--royal-blue);
+        position: relative;
+        overflow: hidden;
+      }
+
+      .booking-steps .section-title {
+        color: var(--white);
+      }
+
+      .booking-steps .section-subtitle {
+        color: var(--light-gold);
+      }
+
+      .step-item {
+        text-align: center;
+        padding: 40px 25px;
+        position: relative;
+        z-index: 1;
+      }
+
+      .step-number {
+        width: 70px;
+        height: 70px;
+        background: linear-gradient(135deg, var(--gold), #b8941f);
+        color: var(--royal-blue);
+        border-radius: 50%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        font-size: 1.8rem;
+        font-weight: 700;
+        margin: 0 auto 25px;
+        box-shadow: 0 8px 20px rgba(212, 175, 55, 0.4);
+        position: relative;
+        z-index: 2;
+      }
+
+      .step-connector {
+        position: absolute;
+        top: 105px;
+        right: -50%;
+        width: 100%;
+        height: 3px;
+        background: linear-gradient(90deg, var(--gold), transparent);
+        z-index: 1;
+      }
+
+      .step-item:last-child .step-connector {
+        display: none;
+      }
+
+      .step-item h5 {
+        color: var(--gold);
+        margin-bottom: 15px;
+        font-size: 1.3rem;
+      }
+
+      .step-item p {
+        color: var(--light-gold);
+        line-height: 1.7;
+      }
+
+      /* Gallery Section */
+      .gallery-section {
+        padding: 120px 0;
+        background: linear-gradient(135deg, var(--cream) 0%, var(--white) 100%);
+      }
+
+      .gallery-item {
+        position: relative;
+        overflow: hidden;
+        border-radius: 15px;
+        margin-bottom: 30px;
+        box-shadow: 0 15px 30px rgba(10, 26, 58, 0.15);
+        height: 300px;
+      }
+
+      .gallery-item img {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+        transition: transform 0.5s ease;
+      }
+
+      .gallery-item:hover img {
+        transform: scale(1.1);
+      }
+
+      .gallery-overlay {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background: linear-gradient(
+          135deg,
+          rgba(10, 26, 58, 0.8),
+          rgba(26, 45, 90, 0.7)
+        );
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        opacity: 0;
+        transition: opacity 0.4s ease;
+        padding: 20px;
+        text-align: center;
+      }
+
+      .gallery-item:hover .gallery-overlay {
+        opacity: 1;
+      }
+
+      .gallery-overlay h5 {
+        color: var(--gold);
+        margin-bottom: 10px;
+        font-size: 1.4rem;
+      }
+
+      .gallery-overlay p {
+        color: var(--light-gold);
+      }
+
+      /* Contact Section */
+      .contact-section {
+        padding: 120px 0;
+        background: var(--royal-blue);
+        position: relative;
+        overflow: hidden;
+      }
+
+      .contact-section .section-title {
+        color: var(--white);
+      }
+
+      .contact-section .section-subtitle {
+        color: var(--light-gold);
+      }
+
+      .contact-info {
+        background: rgba(255, 255, 255, 0.05);
+        backdrop-filter: blur(10px);
+        color: var(--white);
+        padding: 40px;
+        border-radius: 15px;
+        height: 100%;
+        border: 1px solid rgba(212, 175, 55, 0.2);
+        position: relative;
+        z-index: 1;
+      }
+
+      .contact-info h4 {
+        color: var(--gold);
+        margin-bottom: 25px;
+        font-size: 1.6rem;
+      }
+
+      .contact-item {
+        display: flex;
+        align-items: flex-start;
+        margin-bottom: 25px;
+      }
+
+      .contact-item i {
+        color: var(--gold);
+        font-size: 1.3rem;
+        margin-right: 15px;
+        margin-top: 5px;
+      }
+
+      .contact-item div h5 {
+        color: var(--light-gold);
+        margin-bottom: 5px;
+        font-size: 1.1rem;
+      }
+
+      .contact-item div p,
+      .contact-item div a {
+        color: var(--white);
+        text-decoration: none;
+        transition: color 0.3s ease;
+      }
+
+      .contact-item div a:hover {
+        color: var(--gold);
+      }
+
+      .social-icons {
+        margin-top: 30px;
+      }
+
+      .social-icons a {
+        display: inline-flex;
+        align-items: center;
+        justify-content: center;
+        width: 45px;
+        height: 45px;
+        background: rgba(255, 255, 255, 0.1);
+        border-radius: 50%;
+        text-align: center;
+        line-height: 45px;
+        margin-right: 12px;
+        color: var(--white);
+        transition: all 0.3s ease;
+        font-size: 1.2rem;
+      }
+
+      .social-icons a:hover {
+        background: var(--gold);
+        color: var(--royal-blue);
+        transform: translateY(-5px);
+      }
+
+      .contact-form {
+        background: var(--white);
+        padding: 40px;
+        border-radius: 15px;
+        box-shadow: 0 20px 40px rgba(0, 0, 0, 0.2);
+        height: 100%;
+        position: relative;
+        z-index: 1;
+      }
+
+      .contact-form h4 {
+        color: var(--royal-blue);
+        margin-bottom: 25px;
+        font-size: 1.6rem;
+      }
+
+      .form-control {
+        padding: 14px 18px;
+        border: 1px solid rgba(10, 26, 58, 0.2);
+        border-radius: 10px;
+        margin-bottom: 20px;
+        font-size: 1rem;
+        transition: all 0.3s ease;
+      }
+
+      .form-control:focus {
+        border-color: var(--gold);
+        box-shadow: 0 0 0 0.2rem rgba(212, 175, 55, 0.25);
+      }
+
+      /* Team Section Styles */
+      .team-section {
+        padding: 100px 0;
+        background: linear-gradient(135deg, var(--cream) 0%, var(--white) 100%);
+        position: relative;
+        overflow: hidden;
+      }
+
+      .team-slider-container {
+        position: relative;
+        max-width: 1200px;
+        margin: 0 auto;
+        padding: 0 15px;
+      }
+
+      .team-slider {
+        display: flex;
+        overflow-x: auto;
+        scroll-behavior: smooth;
+        scroll-snap-type: x mandatory;
+        -webkit-overflow-scrolling: touch;
+        scrollbar-width: none; /* Firefox */
+        -ms-overflow-style: none; /* IE and Edge */
+        padding: 30px 10px;
+        gap: 20px;
+      }
+
+      .team-slider::-webkit-scrollbar {
+        display: none; /* Chrome, Safari, Opera */
+      }
+
+      .team-slide {
+        flex: 0 0 auto;
+        width: 280px;
+        scroll-snap-align: start;
+      }
+
+      .team-card {
+        background: var(--white);
+        border-radius: 15px;
+        box-shadow: 0 10px 30px rgba(10, 26, 58, 0.1);
+        overflow: hidden;
+        transition: all 0.4s ease;
+        height: 100%;
+        position: relative;
+        text-align: center;
+        padding: 25px 20px;
+        border: 1px solid rgba(212, 175, 55, 0.2);
+      }
+
+      .team-card:before {
+        content: "";
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 5px;
+        background: linear-gradient(90deg, var(--gold), #b8941f);
+      }
+
+      .team-card:hover {
+        transform: translateY(-10px);
+        box-shadow: 0 20px 40px rgba(10, 26, 58, 0.15);
+      }
+
+      .member-img {
+        width: 140px;
+        height: 140px;
+        border-radius: 50%;
+        margin: 0 auto 20px;
+        overflow: hidden;
+        border: 4px solid var(--light-gold);
+        box-shadow: 0 8px 20px rgba(212, 175, 55, 0.3);
+        position: relative;
+      }
+
+      .member-img img {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+        transition: transform 0.5s ease;
+      }
+
+      .team-card:hover .member-img img {
+        transform: scale(1.1);
+      }
+
+      .member-info h5 {
+        color: var(--royal-blue);
+        margin-bottom: 8px;
+        font-size: 1.3rem;
+        font-weight: 600;
+      }
+
+      .member-info .position {
+        color: var(--gold);
+        font-weight: 600;
+        margin-bottom: 15px;
+        font-size: 1rem;
+        line-height: 1.4;
+      }
+
+      .member-info .phone {
+        color: var(--deep-blue);
+        font-weight: 500;
+        margin-bottom: 0;
+        font-size: 1rem;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        gap: 8px;
+      }
+
+      .member-info .phone i {
+        color: var(--gold);
+        font-size: 0.9rem;
+      }
+
+      /* Team Slider Navigation */
+      .team-slider-prev,
+      .team-slider-next {
+        position: absolute;
+        top: 50%;
+        transform: translateY(-50%);
+        width: 50px;
+        height: 50px;
+        background: var(--gold);
+        color: var(--royal-blue);
+        border: none;
+        border-radius: 50%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        cursor: pointer;
+        z-index: 10;
+        transition: all 0.3s ease;
+        box-shadow: 0 5px 15px rgba(212, 175, 55, 0.4);
+        opacity: 0.9;
+      }
+
+      .team-slider-prev {
+        left: 10px;
+      }
+
+      .team-slider-next {
+        right: 10px;
+      }
+
+      .team-slider-prev:hover,
+      .team-slider-next:hover {
+        background: var(--royal-blue);
+        color: var(--gold);
+        transform: translateY(-50%) scale(1.1);
+        opacity: 1;
+      }
+
+      .team-slider-pagination {
+        display: flex;
+        justify-content: center;
+        margin-top: 30px;
+        gap: 10px;
+      }
+
+      .team-slider-pagination .pagination-dot {
+        width: 12px;
+        height: 12px;
+        border-radius: 50%;
+        background: rgba(10, 26, 58, 0.2);
+        cursor: pointer;
+        transition: all 0.3s ease;
+      }
+
+      .team-slider-pagination .pagination-dot.active {
+        background: var(--gold);
+        transform: scale(1.2);
+      }
+
+      /* Auto-scroll animation */
+      .auto-scroll-active {
+        transition: scroll-left 0.8s ease-in-out;
+      }
+
+      /* Responsive Styles for Team Section */
+      @media (max-width: 992px) {
+        .team-slide {
+          width: 250px;
+        }
+
+        .member-img {
+          width: 120px;
+          height: 120px;
+        }
+      }
+
+      @media (max-width: 768px) {
+        .team-section {
+          padding: 80px 0;
+        }
+
+        .team-slide {
+          width: 220px;
+        }
+
+        .member-img {
+          width: 100px;
+          height: 100px;
+        }
+
+        .member-info h5 {
+          font-size: 1.2rem;
+        }
+
+        .member-info .position,
+        .member-info .phone {
+          font-size: 0.9rem;
+        }
+
+        .team-slider-prev,
+        .team-slider-next {
+          width: 40px;
+          height: 40px;
+        }
+      }
+
+      @media (max-width: 576px) {
+        .team-slider-container {
+          padding: 0 10px;
+        }
+
+        .team-slide {
+          width: 200px;
+        }
+
+        .team-card {
+          padding: 20px 15px;
+        }
+
+        .member-img {
+          width: 90px;
+          height: 90px;
+          margin-bottom: 15px;
+        }
+
+        .member-info h5 {
+          font-size: 1.1rem;
+        }
+
+        .member-info .position,
+        .member-info .phone {
+          font-size: 0.85rem;
+        }
+
+        .team-slider-prev,
+        .team-slider-next {
+          width: 35px;
+          height: 35px;
+          font-size: 0.8rem;
+        }
+
+        .team-slider-prev {
+          left: 5px;
+        }
+
+        .team-slider-next {
+          right: 5px;
+        }
+      }
+
+      @media (max-width: 400px) {
+        .team-slide {
+          width: 180px;
+        }
+
+        .member-img {
+          width: 80px;
+          height: 80px;
+        }
+
+        .member-info h5 {
+          font-size: 1rem;
+        }
+
+        .member-info .position,
+        .member-info .phone {
+          font-size: 0.8rem;
+        }
+      }
+
+      @media (max-width: 320px) {
+        .team-slide {
+          width: 160px;
+        }
+
+        .team-card {
+          padding: 15px 10px;
+        }
+
+        .member-img {
+          width: 70px;
+          height: 70px;
+          margin-bottom: 12px;
+        }
+
+        .member-info h5 {
+          font-size: 0.95rem;
+        }
+
+        .member-info .position,
+        .member-info .phone {
+          font-size: 0.75rem;
+        }
+
+        .team-slider-prev,
+        .team-slider-next {
+          width: 30px;
+          height: 30px;
+          font-size: 0.7rem;
+        }
+      }
+
+      /* Toast Notification */
+      .toast {
+        position: fixed;
+        top: 100px;
+        right: 20px;
+        z-index: 9999;
+        border-radius: 10px;
+        overflow: hidden;
+        box-shadow: 0 10px 25px rgba(0, 0, 0, 0.2);
+      }
+
+      /* Footer */
+      footer {
+        background: var(--dark-blue);
+        color: var(--white);
+        padding: 60px 0 20px;
+        position: relative;
+        overflow: hidden;
+      }
+
+      footer:before {
+        content: "";
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 5px;
+        background: linear-gradient(90deg, var(--gold), #b8941f);
+      }
+
+      .footer-logo {
+        font-family: "Cinzel", serif;
+        font-weight: 700;
+        font-size: 2.2rem;
+        margin-bottom: 20px;
+      }
+
+      .footer-logo span {
+        color: var(--gold);
+      }
+
+      footer p {
+        color: rgba(255, 255, 255, 0.7);
+        line-height: 1.7;
+      }
+
+      footer h5 {
+        color: var(--gold);
+        margin-bottom: 25px;
+        font-size: 1.3rem;
+      }
+
+      footer ul {
+        list-style: none;
+        padding: 0;
+      }
+
+      footer ul li {
+        margin-bottom: 12px;
+      }
+
+      footer ul li a {
+        color: rgba(255, 255, 255, 0.7);
+        text-decoration: none;
+        transition: all 0.3s ease;
+        position: relative;
+        padding-left: 0;
+      }
+
+      footer ul li a:before {
+        content: "›";
+        position: absolute;
+        left: -15px;
+        color: var(--gold);
+        transition: all 0.3s ease;
+        opacity: 0;
+      }
+
+      footer ul li a:hover {
+        color: var(--gold);
+        padding-left: 15px;
+      }
+
+      footer ul li a:hover:before {
+        opacity: 1;
+      }
+
+      .copyright {
+        border-top: 1px solid rgba(255, 255, 255, 0.1);
+        padding-top: 25px;
+        margin-top: 50px;
+        text-align: center;
+        font-size: 0.9rem;
+        color: rgba(255, 255, 255, 0.5);
+      }
+
+      /* Animations */
+      @keyframes fadeInUp {
+        from {
+          opacity: 0;
+          transform: translateY(40px);
+        }
+        to {
+          opacity: 1;
+          transform: translateY(0);
+        }
+      }
+
+      @keyframes pulse {
+        0% {
+          transform: scale(1);
+          box-shadow: 0 5px 15px rgba(212, 175, 55, 0.4);
+        }
+        50% {
+          transform: scale(1.05);
+          box-shadow: 0 8px 25px rgba(212, 175, 55, 0.6);
+        }
+        100% {
+          transform: scale(1);
+          box-shadow: 0 5px 15px rgba(212, 175, 55, 0.4);
+        }
+      }
+
+      .pulse-animation {
+        animation: pulse 3s infinite;
+      }
+
+      /* Image Slider Styles */
+      .image-slider {
+        padding: 120px 0;
+        background: var(--royal-blue);
+        position: relative;
+        overflow: hidden;
+      }
+
+      .image-slider .section-title {
+        color: var(--white);
+      }
+
+      .image-slider .section-subtitle {
+        color: var(--light-gold);
+      }
+
+      .swiper {
+        width: 100%;
+        height: 550px;
+        border-radius: 20px;
+        overflow: hidden;
+        box-shadow: 0 25px 50px rgba(0, 0, 0, 0.3);
+        position: relative;
+        z-index: 1;
+      }
+
+      .swiper-slide {
+        position: relative;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        overflow: hidden;
+      }
+
+      .swiper-slide img {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+      }
+
+      .slide-content {
+        position: absolute;
+        bottom: 0;
+        left: 0;
+        width: 100%;
+        padding: 40px;
+        background: linear-gradient(transparent, rgba(10, 26, 58, 0.9));
+        color: white;
+        transform: translateY(100%);
+        transition: transform 0.5s ease;
+      }
+
+      .swiper-slide-active .slide-content {
+        transform: translateY(0);
+      }
+
+      .slide-content h3 {
+        color: var(--gold);
+        font-size: 1.8rem;
+        margin-bottom: 10px;
+      }
+
+      .slide-content p {
+        color: var(--light-gold);
+        font-size: 1.1rem;
+      }
+
+      .swiper-button-next,
+      .swiper-button-prev {
+        color: var(--gold);
+        background: rgba(10, 26, 58, 0.7);
+        width: 60px;
+        height: 60px;
+        border-radius: 50%;
+        backdrop-filter: blur(10px);
+      }
+
+      .swiper-button-next:after,
+      .swiper-button-prev:after {
+        font-size: 1.5rem;
+      }
+
+      .swiper-pagination-bullet {
+        background: var(--light-gold);
+        opacity: 0.5;
+        width: 12px;
+        height: 12px;
+      }
+
+      .swiper-pagination-bullet-active {
+        background: var(--gold);
+        opacity: 1;
+      }
+
+      /* Responsive Styles */
+      @media (max-width: 1200px) {
+        .hero-section h1 {
+          font-size: 4.5rem;
+        }
+
+        .step-connector {
+          display: none;
+        }
+      }
+
+      @media (max-width: 992px) {
+        .hero-section h1 {
+          font-size: 3.8rem;
+        }
+
+        .hero-tagline {
+          font-size: 1.5rem;
+        }
+
+        .hero-subtitle {
+          font-size: 1.2rem;
+        }
+
+        .section-title {
+          font-size: 2.2rem;
+        }
+
+        .about-img-container {
+          margin-bottom: 40px;
+        }
+
+        .swiper {
+          height: 450px;
+        }
+
+        .member-img {
+          width: 150px;
+          height: 150px;
+        }
+      }
+
+      @media (max-width: 768px) {
+        .hero-section {
+          height: 90vh;
+          margin-top: 70px;
+        }
+
+        .hero-section h1 {
+          font-size: 3rem;
+          letter-spacing: 2px;
+        }
+
+        .hero-tagline {
+          font-size: 1.3rem;
+        }
+
+        .hero-subtitle {
+          font-size: 1.1rem;
+        }
+
+        .btn-royal,
+        .btn-royal-outline {
+          padding: 14px 30px;
+          font-size: 1rem;
+        }
+
+        .swiper {
+          height: 350px;
+        }
+
+        .section-title {
+          font-size: 2rem;
+        }
+
+        .feature-icon {
+          width: 70px;
+          height: 70px;
+          font-size: 1.8rem;
+        }
+
+        .step-number {
+          width: 60px;
+          height: 60px;
+          font-size: 1.5rem;
+        }
+
+        .about-section,
+        .services-section,
+        .features-section,
+        .booking-steps,
+        .gallery-section,
+        .contact-section,
+        .team-section {
+          padding: 80px 0;
+        }
+
+        .contact-info,
+        .contact-form {
+          padding: 30px 25px;
+        }
+
+        .hero-buttons .btn {
+          display: block;
+          width: 100%;
+          margin-bottom: 15px;
+        }
+
+        .member-img {
+          width: 130px;
+          height: 130px;
+        }
+      }
+
+      @media (max-width: 576px) {
+        .hero-section {
+          margin-top: 60px;
+        }
+        .hero-section h1 {
+          font-size: 2.5rem;
+        }
+
+        .hero-tagline {
+          font-size: 1.1rem;
+        }
+
+        .hero-subtitle {
+          font-size: 1rem;
+        }
+
+        .swiper {
+          height: 280px;
+        }
+
+        .slide-content {
+          padding: 25px;
+        }
+
+        .slide-content h3 {
+          font-size: 1.4rem;
+        }
+
+        .slide-content p {
+          font-size: 1rem;
+        }
+
+        .navbar-brand {
+          font-size: 1.5rem;
+        }
+
+        .logo-icon {
+          width: 40px;
+          height: 40px;
+          font-size: 1.2rem;
+        }
+
+        .section-title {
+          font-size: 1.8rem;
+        }
+
+        .section-subtitle {
+          font-size: 1rem;
+        }
+
+        .feature-item {
+          padding: 30px 20px;
+        }
+
+        .step-item {
+          padding: 30px 15px;
+        }
+
+        .gallery-item {
+          height: 250px;
+        }
+
+        footer {
+          padding: 40px 0 20px;
+        }
+
+        .footer-logo {
+          font-size: 1.8rem;
+        }
+
+        .member-img {
+          width: 120px;
+          height: 120px;
+        }
+      }
+
+      @media (max-width: 400px) {
+        .hero-section h1 {
+          font-size: 2.2rem;
+        }
+
+        .hero-tagline {
+          font-size: 1rem;
+        }
+
+        .hero-subtitle {
+          font-size: 0.9rem;
+        }
+
+        .btn-royal,
+        .btn-royal-outline {
+          padding: 12px 25px;
+          font-size: 0.9rem;
+        }
+
+        .swiper {
+          height: 220px;
+        }
+
+        .member-img {
+          width: 100px;
+          height: 100px;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <!-- Navigation -->
+    <nav class="navbar navbar-expand-lg navbar-dark fixed-top">
+      <div class="container">
+        <a class="navbar-brand" href="#">
+          <div class="logo-container">
+            <div class="logo-icon">
+              <img class="logo-img" src="logo.png" alt="SIRI Logistic Logo" />
+            </div>
+            <style>
+              .logo-img {
+                height: 60px;
+                width: auto;
+                object-fit: contain;
+                transition: transform 0.3s ease;
+              }
+              .logo-img:hover {
+                transform: scale(1.05);
+              }
+            </style>
+            <div class="company-name"><span>SIRI </span>Logistic</div>
+          </div>
+        </a>
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#navbarNav"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+          <ul class="navbar-nav ms-auto">
+            <li class="nav-item">
+              <a class="nav-link" href="#home">Home</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#about">About Us</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#services">Our Services</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#gallery">Gallery</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#features">Features</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#contact">Contact</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section class="hero-section" id="home">
+      <div class="royal-pattern"></div>
+      <div class="gold-particles" id="goldParticles"></div>
+
+      <!-- Hero Content -->
+      <div class="hero-content">
+  <h1 data-aos="fade-up" data-aos-duration="1200">SIRI LOGISTIC</h1>
+  <p
+    class="hero-tagline"
+    data-aos="fade-up"
+    data-aos-duration="1200"
+    data-aos-delay="300"
+  >
+    Royal Transportation Excellence
+  </p>
+  <p
+    class="hero-subtitle"
+    data-aos="fade-up"
+    data-aos-duration="1200"
+    data-aos-delay="600"
+  >
+    Experience premium corporate and employee transportation services designed
+    for IT companies, BPOs, and enterprises — where comfort meets reliability.
+  </p>
+  <div
+    class="hero-buttons"
+    data-aos="fade-up"
+    data-aos-duration="1200"
+    data-aos-delay="900"
+  >
+    <a href="#contact" class="btn btn-royal pulse-animation me-3"
+      >Book Royal Ride</a
+    >
+    <a href="#services" class="btn btn-royal-outline">Explore Fleet</a>
+  </div>
+</div>
+
+    </section>
+
+   <!-- Image Slider Section -->
+<section class="image-slider">
+  <div class="container">
+    <h2 class="section-title" data-aos="fade-up">Our Premium Fleet</h2>
+    <p class="section-subtitle" data-aos="fade-up" data-aos-delay="200">
+      Explore our modern fleet designed to provide comfort, safety, and style
+      for corporate and employee transportation.
+    </p>
+    <div
+      class="swiper mySwiper"
+      data-aos="fade-up"
+      data-aos-duration="1000"
+    >
+      <div class="swiper-wrapper">
+        <div class="swiper-slide">
+          <img src="Luxury Bus Services.jpg" alt="Luxury Bus" />
+          <div class="slide-content">
+            <h3>Executive Coach Services</h3>
+            <p>
+              Premium air-conditioned buses equipped with advanced features
+              for smooth and reliable employee transportation.
+            </p>
+          </div>
+        </div>
+
+        <div class="swiper-slide">
+          <img src="srilogistic bus.png" alt="Corporate Transport" />
+          <div class="slide-content">
+            <h3>Corporate Transport</h3>
+            <p>
+              Dedicated daily transportation for IT companies, BPOs, and
+              corporate offices, ensuring punctual and hassle-free commutes.
+            </p>
+          </div>
+        </div>
+
+        <div class="swiper-slide">
+          <img src="Mini Bus.png" alt="Shuttle Services" />
+          <div class="slide-content">
+            <h3>Shuttle & Staff Services</h3>
+            <p>
+              Efficient shuttle solutions for staff pick-up and drop,
+              designed for convenience, safety, and time management.
+            </p>
+          </div>
+        </div>
+
+        <div class="swiper-slide">
+          <img src="Business Travel.png" alt="Business Travel" />
+          <div class="slide-content">
+            <h3>Business & Event Travel</h3>
+            <p>
+              Professional transportation solutions for meetings, conferences,
+              client visits, and corporate events across Hyderabad.
+            </p>
+          </div>
+        </div>
+      </div>
+      <div class="swiper-button-next"></div>
+      <div class="swiper-button-prev"></div>
+      <div class="swiper-pagination"></div>
+    </div>
+  </div>
+</section>
+
+
+    <!-- About Section -->
+    <section class="about-section" id="about">
+      <div class="container">
+        <h2 class="section-title" data-aos="fade-up">About Us</h2>
+        <p class="section-subtitle" data-aos="fade-up" data-aos-delay="200">
+          Your trusted partner in premium transportation services
+        </p>
+        <div class="row align-items-center">
+          <div
+            class="col-lg-6 mb-4 mb-lg-0"
+            data-aos="fade-right"
+            data-aos-duration="1000"
+          >
+            <div class="about-img-container">
+              <img src="srilogistic bus.png" alt="Luxury Bus" />
+            </div>
+          </div>
+          <div class="col-lg-6" data-aos="fade-left" data-aos-duration="1000">
+            <div class="about-content">
+              <h3>Your Royal Transportation Partner</h3>
+              <p>
+                <strong>SIRI Logistic</strong>, under the leadership of
+                proprietor <strong>P. Radha Krishna Reddy</strong>, has been
+                delivering premium employee and corporate transportation
+                solutions with a commitment to excellence, comfort, and
+                reliability. We take pride in providing seamless travel
+                experiences tailored for modern businesses.
+              </p>
+              <p>
+                With years of experience in the transport industry, we
+                understand the importance of punctuality, safety, and customer
+                satisfaction. Our professional drivers and well-maintained fleet
+                ensure that every employee enjoys a smooth, comfortable, and
+                stress-free journey to and from the workplace.
+              </p>
+              <p>
+                Whether it’s daily staff transportation for IT companies, BPOs,
+                and corporate offices, or customized business travel solutions,
+                <strong>SIRI Logistic</strong> stands as your trusted partner
+                for reliable and premium transportation services across
+                Hyderabad and beyond.
+              </p>
+              <div class="mt-4">
+                <h5>Why Choose SIRI Logistic?</h5>
+                <ul class="feature-list">
+                  <li>Modern fleet of luxury and employee transport buses</li>
+                  <li>Dedicated corporate transportation services</li>
+                  <li>Experienced and professional drivers</li>
+                  <li>24/7 customer support and real-time assistance</li>
+                  <li>Competitive and transparent pricing</li>
+                  <li>
+                    Customized travel solutions for IT and corporate clients
+                  </li>
+                  <li>Royal comfort and reliability in every ride</li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Services Section -->
+<section class="services-section" id="services">
+  <div class="container">
+    <h2 class="section-title" data-aos="fade-up">Our Services</h2>
+    <p class="section-subtitle" data-aos="fade-up" data-aos-delay="200">
+      Reliable and professional transportation solutions designed for IT companies, BPOs, and corporate offices.
+    </p>
+    <div class="row">
+
+      <!-- Executive Coach Services -->
+      <div class="col-md-4" data-aos="fade-up" data-aos-delay="100">
+        <div class="card service-card">
+          <div class="service-badge">Most Popular</div>
+          <img
+            src="Luxury Bus Services.jpg"
+            class="card-img-top"
+            alt="Executive Coach Services"
+          />
+          <div class="card-body">
+            <h5>Executive Coach Services</h5>
+            <p>
+              Premium air-conditioned buses offering superior comfort,
+              reliability, and punctuality for daily employee transportation.
+            </p>
+            <ul class="feature-list">
+              <li>Employee Shuttle Services</li>
+              <li>Corporate Travel Programs</li>
+              <li>Custom Route Planning</li>
+              <li>Comfortable AC Coaches</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+
+      <!-- Staff Transportation -->
+      <div class="col-md-4" data-aos="fade-up" data-aos-delay="300">
+        <div class="card service-card">
+          <div class="service-badge">Employee</div>
+          <img
+            src="srilogistic bus.png"
+            class="card-img-top"
+            alt="Staff Transportation"
+          />
+          <div class="card-body">
+            <h5>Staff Transportation</h5>
+            <p>
+              Safe and efficient daily commute services for IT parks,
+              industrial zones, and business hubs across Hyderabad.
+            </p>
+            <ul class="feature-list">
+              <li>Timely Pick-up & Drop</li>
+              <li>GPS-Enabled Tracking</li>
+              <li>Professional & Trained Drivers</li>
+              <li>Flexible Scheduling Options</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+
+      <!-- Corporate Event Travel -->
+      <div class="col-md-4" data-aos="fade-up" data-aos-delay="500">
+        <div class="card service-card">
+          <div class="service-badge">Corporate</div>
+          <img
+            src="Corporate Travel.png"
+            class="card-img-top"
+            alt="Corporate Event Travel"
+          />
+          <div class="card-body">
+            <h5>Corporate Event Travel</h5>
+            <p>
+              Tailored transportation for business meetings, corporate events,
+              conferences, and official visits with premium comfort.
+            </p>
+            <ul class="feature-list">
+              <li>Corporate Conferences & Events</li>
+              <li>Client Visit Transfers</li>
+              <li>Executive Travel Solutions</li>
+              <li>Professional Fleet Management</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+ <!-- Features Section -->
+<section class="features-section" id="features">
+  <div class="container">
+    <h2 class="section-title" data-aos="fade-up">Our Key Features</h2>
+    <p class="section-subtitle" data-aos="fade-up" data-aos-delay="200">
+      Delivering reliable, comfortable, and safe transportation for corporate excellence.
+    </p>
+    <div class="row">
+      <div class="col-md-3" data-aos="fade-up" data-aos-delay="100">
+        <div class="feature-item">
+          <div class="feature-icon">
+            <i class="fas fa-shield-alt"></i>
+          </div>
+          <h5>Safety First</h5>
+          <p>
+            Strict safety standards, GPS-enabled monitoring, and trained drivers
+            ensure complete safety and peace of mind for all passengers.
+          </p>
+        </div>
+      </div>
+
+      <div class="col-md-3" data-aos="fade-up" data-aos-delay="200">
+        <div class="feature-item">
+          <div class="feature-icon">
+            <i class="fas fa-clock"></i>
+          </div>
+          <h5>On-Time Every Time</h5>
+          <p>
+            Smart scheduling and real-time tracking guarantee punctual
+            pick-up and drop for employees — every single day.
+          </p>
+        </div>
+      </div>
+
+      <div class="col-md-3" data-aos="fade-up" data-aos-delay="300">
+        <div class="feature-item">
+          <div class="feature-icon">
+            <i class="fas fa-headset"></i>
+          </div>
+          <h5>24/7 Support</h5>
+          <p>
+            Round-the-clock assistance to handle route updates, emergencies,
+            or travel requests with quick and professional responses.
+          </p>
+        </div>
+      </div>
+
+      <div class="col-md-3" data-aos="fade-up" data-aos-delay="400">
+        <div class="feature-item">
+          <div class="feature-icon">
+            <i class="fas fa-map-marker-alt"></i>
+          </div>
+          <h5>Wide Corporate Network</h5>
+          <p>
+            Trusted by leading IT companies and corporates across Hyderabad
+            with extensive service routes covering all major business zones.
+          </p>
+        </div>
+      </div>
+    </div>
+
+    <div class="row mt-4">
+      <div class="col-md-3" data-aos="fade-up" data-aos-delay="500">
+        <div class="feature-item">
+          <div class="feature-icon">
+            <i class="fas fa-tachometer-alt"></i>
+          </div>
+          <h5>Modern Fleet</h5>
+          <p>
+            Clean, comfortable, and well-maintained buses with the latest
+            technology, air conditioning, and ergonomic seating.
+          </p>
+        </div>
+      </div>
+
+      <div class="col-md-3" data-aos="fade-up" data-aos-delay="600">
+        <div class="feature-item">
+          <div class="feature-icon">
+            <i class="fas fa-rupee-sign"></i>
+          </div>
+          <h5>Competitive Pricing</h5>
+          <p>
+            Affordable and transparent pricing models crafted for IT companies
+            and corporate transport needs — no hidden charges.
+          </p>
+        </div>
+      </div>
+
+      <div class="col-md-3" data-aos="fade-up" data-aos-delay="700">
+        <div class="feature-item">
+          <div class="feature-icon">
+            <i class="fas fa-user-tie"></i>
+          </div>
+          <h5>Professional Team</h5>
+          <p>
+            Skilled drivers, dedicated coordinators, and customer support staff
+            committed to delivering a seamless travel experience.
+          </p>
+        </div>
+      </div>
+
+      <div class="col-md-3" data-aos="fade-up" data-aos-delay="800">
+        <div class="feature-item">
+          <div class="feature-icon">
+            <i class="fas fa-cogs"></i>
+          </div>
+          <h5>Customized Solutions</h5>
+          <p>
+            Flexible transportation plans tailored to your company’s shift
+            timings, route preferences, and employee requirements.
+          </p>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+    <!-- Booking Steps -->
+    <section class="booking-steps">
+      <div class="container">
+        <h2 class="section-title" data-aos="fade-up">
+          How to Book Our Services
+        </h2>
+        <p class="section-subtitle" data-aos="fade-up" data-aos-delay="200">
+          Simple steps to experience our royal transportation services
+        </p>
+        <div class="row">
+          <div class="col-md-3" data-aos="fade-up" data-aos-delay="100">
+            <div class="step-item">
+              <div class="step-number">1</div>
+              <h5>Contact Us</h5>
+              <p>
+                Call, email, or fill our contact form with your transportation
+                or Logistic requirements.
+              </p>
+              <div class="step-connector"></div>
+            </div>
+          </div>
+          <div class="col-md-3" data-aos="fade-up" data-aos-delay="200">
+            <div class="step-item">
+              <div class="step-number">2</div>
+              <h5>Get a Quote</h5>
+              <p>
+                We'll provide a detailed quotation with pricing, vehicle
+                options, and service details.
+              </p>
+              <div class="step-connector"></div>
+            </div>
+          </div>
+          <div class="col-md-3" data-aos="fade-up" data-aos-delay="300">
+            <div class="step-item">
+              <div class="step-number">3</div>
+              <h5>Confirm Booking</h5>
+              <p>
+                Secure your booking with advance payment. We'll send
+                confirmation with all details.
+              </p>
+              <div class="step-connector"></div>
+            </div>
+          </div>
+          <div class="col-md-3" data-aos="fade-up" data-aos-delay="400">
+            <div class="step-item">
+              <div class="step-number">4</div>
+              <h5>Service Delivery</h5>
+              <p>
+                Our professional team will execute the service with precision
+                and care.
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- Gallery Section -->
+<section class="gallery-section" id="gallery">
+  <div class="container">
+    <h2 class="section-title" data-aos="fade-up">Our Fleet & Operations</h2>
+    <p class="section-subtitle" data-aos="fade-up" data-aos-delay="200">
+      Take a look at our modern fleet and professional employee transportation operations.
+    </p>
+    <div class="row">
+
+      <!-- Executive Coaches -->
+      <div class="col-md-4" data-aos="fade-up" data-aos-delay="100">
+        <div class="gallery-item">
+          <img src="Luxury Bus Services.jpg" alt="Executive Coaches" />
+          <div class="gallery-overlay">
+            <h5>Executive Coaches</h5>
+            <p>Spacious, air-conditioned buses designed for employee comfort and style.</p>
+          </div>
+        </div>
+      </div>
+
+      <!-- Staff Shuttle Operations -->
+      <div class="col-md-4" data-aos="fade-up" data-aos-delay="300">
+        <div class="gallery-item">
+          <img src="Business Travel.png" alt="Staff Shuttle Operations" />
+          <div class="gallery-overlay">
+            <h5>Staff Shuttle Operations</h5>
+            <p>Well-organized pick-up and drop services for IT and corporate employees.</p>
+          </div>
+        </div>
+      </div>
+
+      <!-- Corporate Fleet -->
+      <div class="col-md-4" data-aos="fade-up" data-aos-delay="500">
+        <div class="gallery-item">
+          <img src="Corporate Travel.png" alt="Corporate Fleet" />
+          <div class="gallery-overlay">
+            <h5>Corporate Fleet</h5>
+            <p>Professional transportation solutions for offices, meetings, and business events.</p>
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+    <!-- Contact Section -->
+    <section class="contact-section" id="contact">
+      <div class="container">
+        <h2 class="section-title" data-aos="fade-up">Contact Us</h2>
+        <p class="section-subtitle" data-aos="fade-up" data-aos-delay="200">
+          Get in touch for royal transportation services
+        </p>
+        <div class="row">
+          <div
+            class="col-lg-5 mb-4 mb-lg-0"
+            data-aos="fade-right"
+            data-aos-duration="800"
+          >
+            <div class="contact-info">
+              <h4>Get In Touch</h4>
+              <div class="contact-item">
+                <i class="fas fa-map-marker-alt"></i>
+                <div>
+                  <h5>Address</h5>
+                  <p>
+                    Near LB Nagar, RR District, Hyderabad, 500035
+                  </p>
+                </div>
+              </div>
+              <div class="contact-item">
+                <i class="fas fa-phone-alt"></i>
+                <div>
+                  <h5>Phone</h5>
+                  <p><a href="tel:+91 7995231233">+91 7995231233</a></p>
+                </div>
+              </div>
+              <div class="contact-item">
+                <i class="fas fa-envelope"></i>
+                <div>
+                  <h5>Email</h5>
+                  <p>
+                    <a href="mailto:sirilogistic25@gmail.com"
+                      >sirilogistic25@gmail.com</a
+                    >
+                  </p>
+                </div>
+              </div>
+              <div class="contact-item">
+                <i class="fas fa-globe"></i>
+                <div>
+                  <h5>Website</h5>
+                  <p>
+                    <a href="https://www.siriLogistic.com" target="_blank"
+                      >www.siriLogistic.com</a
+                    >
+                  </p>
+                </div>
+              </div>
+              <div class="social-icons">
+                <a href="#"><i class="fab fa-facebook-f"></i></a>
+                <a href="#"><i class="fab fa-twitter"></i></a>
+                <a href="#"><i class="fab fa-instagram"></i></a>
+                <a href="#"><i class="fab fa-linkedin-in"></i></a>
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-7" data-aos="fade-left" data-aos-duration="800">
+            <div class="contact-form">
+              <h4 class="mb-4">Send Us a Message</h4>
+              <form id="contactForm">
+                <div class="row">
+                  <div class="col-md-6">
+                    <input
+                      type="text"
+                      class="form-control"
+                      id="name"
+                      placeholder="Your Name"
+                      required
+                    />
+                  </div>
+                  <div class="col-md-6">
+                    <input
+                      type="email"
+                      class="form-control"
+                      id="email"
+                      placeholder="Your Email"
+                      required
+                    />
+                  </div>
+                </div>
+                <input
+                  type="text"
+                  class="form-control"
+                  id="subject"
+                  placeholder="Subject"
+                  required
+                />
+                <textarea
+                  class="form-control"
+                  id="message"
+                  rows="5"
+                  placeholder="Your Message"
+                  required
+                ></textarea>
+                <button type="submit" class="btn btn-royal">
+                  Send Message
+                </button>
+              </form>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- Toast Notification -->
+    <div
+      class="toast align-items-center text-white bg-success border-0"
+      role="alert"
+      aria-live="assertive"
+      aria-atomic="true"
+      id="successToast"
+    >
+      <div class="d-flex">
+        <div class="toast-body">
+          Thank you for your message! We'll get back to you soon.
+        </div>
+        <button
+          type="button"
+          class="btn-close btn-close-white me-2 m-auto"
+          data-bs-dismiss="toast"
+          aria-label="Close"
+        ></button>
+      </div>
+    </div>
+    <script>
+      document
+        .getElementById("contactForm")
+        .addEventListener("submit", function (e) {
+          e.preventDefault();
+
+          const name = document.getElementById("name").value;
+          const email = document.getElementById("email").value;
+          const subject = document.getElementById("subject").value;
+          const message = document.getElementById("message").value;
+
+          const url =
+            "https://script.google.com/macros/s/AKfycbzDBsg7qrsbj8gF814EZnryl_D-6rWki5UjSN5kIhzIU5BJVOds1pGRxGOdwzpVcjJ2/exec"; // Replace with your deployed Apps Script URL
+
+          fetch(url, {
+            method: "POST",
+            mode: "no-cors",
+            headers: {
+              "Content-Type": "application/x-www-form-urlencoded",
+            },
+            body: `name=${encodeURIComponent(name)}&email=${encodeURIComponent(
+              email
+            )}&subject=${encodeURIComponent(
+              subject
+            )}&message=${encodeURIComponent(message)}`,
+          })
+            .then(() => {
+              // Show success toast
+              var toast = new bootstrap.Toast(
+                document.getElementById("successToast")
+              );
+              toast.show();
+              document.getElementById("contactForm").reset();
+            })
+            .catch((err) => {
+              alert("Error sending message. Please try again.");
+              console.error(err);
+            });
+        });
+    </script>
+
+    <!-- Team Section -->
+    <section class="team-section">
+      <div class="container">
+        <h2 class="section-title" data-aos="fade-up">Our Team</h2>
+        <p class="section-subtitle" data-aos="fade-up" data-aos-delay="200">
+          Meet the dedicated professionals behind SIRI Logistic's success
+        </p>
+
+        <div class="team-slider-container">
+          <div class="team-slider">
+            <!-- Team Member 1 -->
+            <div class="team-slide" data-aos="fade-up">
+              <div class="team-card">
+                <div class="member-img">
+                  <img src="Radhakrishna.jpeg" alt="P. Radha Krishna Reddy" />
+                </div>
+                <div class="member-info">
+                  <h5>P. Radha Krishna Reddy</h5>
+                  <p class="position">Founder & Proprietor</p>
+                </div>
+              </div>
+            </div>
+
+            <!-- Team Member 2 -->
+            <div class="team-slide" data-aos="fade-up" data-aos-delay="100">
+              <div class="team-card">
+                <div class="member-img">
+                  <img src="Gourinath.jpg" alt="P. Gourinath Reddy" />
+                </div>
+                <div class="member-info">
+                  <h5>P. Gourinath Reddy</h5>
+                  <p class="position">Operating Manager</p>
+                  
+                </div>
+              </div>
+            </div>
+
+            <!-- Team Member 3 -->
+            <div class="team-slide" data-aos="fade-up" data-aos-delay="200">
+              <div class="team-card">
+                <div class="member-img">
+                  <img src="Jhon1.png" alt="Jhon" />
+                </div>
+                <div class="member-info">
+                  <h5>Ganesh</h5>
+                  <p class="position">Management Team</p>
+                  <p class="phone">
+                    <a href="tel:+917893171238" style="text-decoration: none;  background-size: 100% 200%; background-position: 0% 100%">
+                      <i class="fas fa-phone-alt"></i> +91 7893171238
+                    </a>
+                  </p>
+                </div>
+              </div>
+            </div>
+
+            <!-- Team Member 4 -->
+            <div class="team-slide" data-aos="fade-up" data-aos-delay="300">
+              <div class="team-card">
+                <div class="member-img">
+                  <img src="Jhon.png" alt="Jhon" />
+                </div>
+                <div class="member-info">
+                  <h5>Mahesh</h5>
+                  <p class="position">Team Leader</p>
+                  <p class="phone">
+                    <a href="tel:+919652644438" style="text-decoration: none;  background-size: 100% 200%; background-position: 0% 100%">
+                      <i class="fas fa-phone-alt"></i> +91 9652464438
+                    </a>
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Navigation Arrows -->
+          <button class="team-slider-prev" aria-label="Previous team member">
+            <i class="fas fa-chevron-left"></i>
+          </button>
+          <button class="team-slider-next" aria-label="Next team member">
+            <i class="fas fa-chevron-right"></i>
+          </button>
+
+          <!-- Pagination Dots -->
+          <div class="team-slider-pagination"></div>
+        </div>
+      </div>
+    </section>
+
+    <script>
+      // Team Slider Functionality with Auto-scroll
+      document.addEventListener("DOMContentLoaded", function () {
+        const teamSlider = document.querySelector(".team-slider");
+        const prevButton = document.querySelector(".team-slider-prev");
+        const nextButton = document.querySelector(".team-slider-next");
+        const paginationContainer = document.querySelector(
+          ".team-slider-pagination"
+        );
+
+        let autoScrollInterval;
+        let currentSlide = 0;
+        const slides = document.querySelectorAll(".team-slide");
+        const slideCount = slides.length;
+
+        // Create pagination dots
+        slides.forEach((_, index) => {
+          const dot = document.createElement("div");
+          dot.classList.add("pagination-dot");
+          if (index === 0) dot.classList.add("active");
+          dot.addEventListener("click", () => {
+            goToSlide(index);
+            resetAutoScroll();
+          });
+          paginationContainer.appendChild(dot);
+        });
+
+        const dots = document.querySelectorAll(".pagination-dot");
+
+        // Function to go to specific slide
+        function goToSlide(index) {
+          const slideWidth = slides[0].offsetWidth + 20; // width + gap
+          teamSlider.classList.add("auto-scroll-active");
+          teamSlider.scrollLeft = index * slideWidth;
+
+          // Update active dot
+          dots.forEach((dot) => dot.classList.remove("active"));
+          dots[index].classList.add("active");
+
+          currentSlide = index;
+
+          // Remove animation class after transition
+          setTimeout(() => {
+            teamSlider.classList.remove("auto-scroll-active");
+          }, 800);
+        }
+
+        // Next button click
+        nextButton.addEventListener("click", () => {
+          const nextSlide = (currentSlide + 1) % slideCount;
+          goToSlide(nextSlide);
+          resetAutoScroll();
+        });
+
+        // Previous button click
+        prevButton.addEventListener("click", () => {
+          const prevSlide = (currentSlide - 1 + slideCount) % slideCount;
+          goToSlide(prevSlide);
+          resetAutoScroll();
+        });
+
+        // Auto-scroll function
+        function startAutoScroll() {
+          autoScrollInterval = setInterval(() => {
+            const nextSlide = (currentSlide + 1) % slideCount;
+            goToSlide(nextSlide);
+          }, 3000); // 3 seconds
+        }
+
+        // Reset auto-scroll timer
+        function resetAutoScroll() {
+          clearInterval(autoScrollInterval);
+          startAutoScroll();
+        }
+
+        // Pause auto-scroll on hover
+        teamSlider.addEventListener("mouseenter", () => {
+          clearInterval(autoScrollInterval);
+        });
+
+        // Resume auto-scroll when not hovering
+        teamSlider.addEventListener("mouseleave", () => {
+          startAutoScroll();
+        });
+
+        // Update active dot on manual scroll
+        teamSlider.addEventListener("scroll", () => {
+          const slideWidth = slides[0].offsetWidth + 20;
+          const activeIndex = Math.round(teamSlider.scrollLeft / slideWidth);
+
+          if (activeIndex !== currentSlide) {
+            dots.forEach((dot) => dot.classList.remove("active"));
+            dots[Math.min(activeIndex, slideCount - 1)].classList.add("active");
+            currentSlide = activeIndex;
+            resetAutoScroll();
+          }
+        });
+
+        // Touch/swipe support for mobile
+        let startX;
+        let scrollLeft;
+
+        teamSlider.addEventListener("touchstart", (e) => {
+          startX = e.touches[0].pageX - teamSlider.offsetLeft;
+          scrollLeft = teamSlider.scrollLeft;
+          clearInterval(autoScrollInterval);
+        });
+
+        teamSlider.addEventListener("touchmove", (e) => {
+          if (!startX) return;
+          const x = e.touches[0].pageX - teamSlider.offsetLeft;
+          const walk = (x - startX) * 2;
+          teamSlider.scrollLeft = scrollLeft - walk;
+        });
+
+        teamSlider.addEventListener("touchend", () => {
+          startAutoScroll();
+        });
+
+        // Initialize auto-scroll
+        startAutoScroll();
+      });
+    </script>
+
+<!-- Footer -->
+<footer>
+  <div class="container">
+    <div class="row">
+      <!-- Company Info -->
+      <div
+        class="col-lg-4 mb-4 mb-lg-0"
+        data-aos="fade-up"
+        data-aos-duration="800"
+      >
+        <div class="footer-logo"><span>SIRI </span>Logistic</div>
+        <p>
+          Your reliable partner for corporate and luxury transportation services
+          in Hyderabad and across India. We ensure safety, punctuality, and premium
+          comfort for every journey.
+        </p>
+       
+      </div>
+
+      <!-- Quick Links -->
+      <div
+        class="col-lg-4 mb-4 mb-lg-0"
+        data-aos="fade-up"
+        data-aos-duration="800"
+        data-aos-delay="100"
+      >
+        <h5>Quick Links</h5>
+        <ul>
+          <li><a href="#home">Home</a></li>
+          <li><a href="#about">About Us</a></li>
+          <li><a href="#services">Our Services</a></li>
+          <li><a href="#gallery">Gallery</a></li>
+          <li><a href="#features">Features</a></li>
+          <li><a href="#contact">Contact</a></li>
+        </ul>
+      </div>
+
+      <!-- Our Services -->
+      <div
+        class="col-lg-4"
+        data-aos="fade-up"
+        data-aos-duration="800"
+        data-aos-delay="200"
+      >
+        <h5>Our Services</h5>
+        <ul>
+          <li><a href="#">Corporate Employee Transport</a></li>
+          <li><a href="#">Executive & VIP Coaches</a></li>
+          <li><a href="#">Staff Shuttle Operations</a></li>
+          <li><a href="#">Airport Transfers</a></li>
+          <li><a href="#">Wedding & Event Transport</a></li>
+          <li><a href="#">City & Outstation Travel</a></li>
+        </ul>
+      </div>
+    </div>
+
+    <!-- Copyright -->
+    <div class="copyright">
+      <p>
+        &copy; 2025 <strong>SIRI Logistic</strong>. All Rights Reserved. |
+        Proprietor: <strong>P. Radha Krishna Reddy</strong>
+      </p>
+    </div>
+  </div>
+</footer>
+
+
+    <!-- Bootstrap JS -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"></script>
+    <!-- AOS Animation JS -->
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <!-- Swiper JS -->
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+    <!-- Custom JS -->
+    <script>
+      // Initialize AOS
+      AOS.init({
+        duration: 1000,
+        once: true,
+        offset: 100,
+      });
+
+      // Navbar scroll effect
+      window.addEventListener("scroll", function () {
+        if (window.scrollY > 50) {
+          document.querySelector(".navbar").classList.add("scrolled");
+        } else {
+          document.querySelector(".navbar").classList.remove("scrolled");
+        }
+      });
+
+      // Smooth scrolling for anchor links
+      document.querySelectorAll('a[href^="#"]').forEach((anchor) => {
+        anchor.addEventListener("click", function (e) {
+          e.preventDefault();
+
+          const targetId = this.getAttribute("href");
+          if (targetId === "#") return;
+
+          const targetElement = document.querySelector(targetId);
+          if (targetElement) {
+            window.scrollTo({
+              top: targetElement.offsetTop - 70,
+              behavior: "smooth",
+            });
+          }
+        });
+      });
+
+      // Contact form submission
+      document
+        .getElementById("contactForm")
+        .addEventListener("submit", function (e) {
+          e.preventDefault();
+
+          // Show success message
+          const toast = new bootstrap.Toast(
+            document.getElementById("successToast")
+          );
+          toast.show();
+
+          // Reset form
+          this.reset();
+        });
+
+      // Initialize Swiper
+      var swiper = new Swiper(".mySwiper", {
+        spaceBetween: 0,
+        effect: "fade",
+        loop: true,
+        autoplay: {
+          delay: 6000,
+          disableOnInteraction: false,
+        },
+        pagination: {
+          el: ".swiper-pagination",
+          clickable: true,
+        },
+        navigation: {
+          nextEl: ".swiper-button-next",
+          prevEl: ".swiper-button-prev",
+        },
+      });
+
+      // Create gold particles
+      function createGoldParticles() {
+        const particlesContainer = document.getElementById("goldParticles");
+        const particleCount = 30;
+
+        for (let i = 0; i < particleCount; i++) {
+          const particle = document.createElement("div");
+          particle.classList.add("gold-particle");
+
+          // Random size
+          const size = Math.random() * 6 + 2;
+          particle.style.width = `${size}px`;
+          particle.style.height = `${size}px`;
+
+          // Random position
+          particle.style.left = `${Math.random() * 100}%`;
+
+          // Random animation delay
+          particle.style.animationDelay = `${Math.random() * 15}s`;
+
+          // Random opacity
+          particle.style.opacity = Math.random() * 0.5 + 0.3;
+
+          particlesContainer.appendChild(particle);
+        }
+      }
+
+      // Initialize particles
+      createGoldParticles();
+    </script>
+  </body>
+</html>
